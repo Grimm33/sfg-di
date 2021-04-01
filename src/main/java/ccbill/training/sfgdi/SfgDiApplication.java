@@ -16,9 +16,9 @@ public class SfgDiApplication {
 
 		MyController myController = (MyController) ctx.getBean("myController"); //bean name is class name but lowercase first letter
 
-		String greeting = myController.sayHello();
+		System.out.println("\n---------- Primary Bean ----------\n");
 
-		System.out.println(greeting);
+		System.out.println(myController.sayHello());
 
 		System.out.println("\n---------- Property ----------\n");
 
